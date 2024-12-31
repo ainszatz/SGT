@@ -112,4 +112,27 @@ Get member's borrowing history
 - `page` (integer, default: 1)
 - `limit` (integer, default: 10)
 
-**Response includes book details**
+**Response Format:**
+```json
+{
+  "borrowings": [
+    {
+      "book_author": "J.R.R. Tolkien",
+      "book_id": "045c4949-1880-4560-a717-362bb5986597",
+      "book_title": "The Lord of the Rings",
+      "borrow_date": "Tue, 31 Dec 2024 00:00:00 GMT",
+      "borrowing_id": "18d934c6-f2ce-44f6-a608-0d2a689ee240",
+      "member_id": "6277f0ee-5c32-4265-bf4f-c2e16ee9b460",
+      "return_date": null,
+      "status": "BORROWED"
+    }
+  ],
+  "limit": 10,
+  "memberId": "6277f0ee-5c32-4265-bf4f-c2e16ee9b460",
+  "memberName": "Karina",
+  "page": 1,
+  "status": null,
+  "totalPages": 1,
+  "totalRecords": 1
+}
+```
